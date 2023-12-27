@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+
+  <title>Bootstrap Navbar Example</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    /* Add custom styles here */
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .rounded-card {
+      border-radius: 15px; /* Adjust the value for the desired curvature */
+    }
+
+    /* Optional: Add padding or margin as needed */
+    .cards-container {
+      padding: 20px;
+    }
+
+    /* Style the rounded images */
+    .rounded-img {
+      border-radius: 15px; /* Match the card's border-radius */
+      width: 100%; /* Make the image fill the container */
+      height: 100%; /* Make the image fill the container */
+      object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+
+    .full-bio-link {
+      text-decoration: none;
+      color: #442727; /* Set the link color */
+    }
+
+    .full-bio-link:hover {
+      text-decoration: underline; /* Underline the link on hover */
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="header" class="sticky-top">
+    <div style="font-family: 'Times New Roman', serif;">
+      <i class="fas fa-map-marker-alt"></i>2200 169th Street, Hammond, Indiana
+    </div>
+    <div>
+      <i class="far fa-envelope"></i><a class="email-link text-white" style="font-family: 'Times New Roman', serif;"href="mailto:info@company.com">magesh@pnw.edu</a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div id="navbar" class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <a class="navbar-brand" href="#"><b>SPEXTRA</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">What is VR?</a>
+              <a class="dropdown-item" href="#">Interaction in VR</a>
+              <!-- Repeat the items as needed -->
+    
+              <!-- Add more items to test scrolling -->
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="people.html">People</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+  
+<div style="margin-bottom: 60px;"></div>
+
+
+<div class="container" style="font-family: 'Times New Roman', serif; text-indent: 1px; text-align: justify;">
+    <div class="cards-container">
+      <h2 class="mb-4 text-center" style="font-family: 'Times New Roman', serif;">Meet Our Research Team</h2>
+      <div style="margin-bottom: 60px;"></div>
+      <h5 class="card-title"><b>Principal Investigator</b></h5>
+
+      <div class="card mb-3 rounded-card" style="max-width: 950px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="professor.png" class="img-fluid rounded-img" alt="...">
+          </div>
+          <div class="col-md-8" style="font-family: 'Times New Roman', serif;text-indent: 1px; text-align: justify;">
+            <div class="card-body">
+              <h5 class="card-title"><b>Magesh Chandramouli</b></h5>
+              
+              <p class="card-text">Dr. Magesh Chandramouli is a Professor of Computer Graphics Technology at Purdue University, Northwest, and a Fellow of the Software Sustainability Institute, UK. He holds a Ph.D. from Purdue University, West Lafayette, and has received recognition for his work, including the Warner Professional Practice Award and the University Outstanding Scholar Award. With expertise in Virtual Reality, Visualization, Genetic Algorithms, and Design Optimization, Dr. Chandramouli has been involved in various research projects, including NSF grants and the SMART fund. He is a member of IEEE, American Society of Engineering Education, MENSA, and Epsilon Pi Tau. Additionally, he has authored a book titled '3D Modeling & Animation: A primer' published by Taylor & Francis Publishers/CRC Press.</p>
+              <a href="https://www.pnw.edu/wp-content/uploads/2020/01/Magesh_Vita.pdf" class="full-bio-link"><b>Read Full Bio</b></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 60px;"></div>
+      <h5 class="card-title"><b>Graduate Student-Research Assistant</b></h5>
+
+      <div class="card mb-3 rounded-card" style="max-width: 950px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="jshimpi.png" class="img-fluid rounded-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><b>Jaimin Shimpi</b></h5>
+              <p class="card-text">Jaimin Shimpi is Graduate Student from Purdue University Northwest; He did his bachelor in Information Technology from BVM Engineering College, India, and is currently pursuing Masters in Technology with research in Virtual Reality at Purdue University Northwest. Jaimin is working on various VR modules under the mentoring of Prof. Chandramouli for NSF Project Spextra.</p>
+              <a href="#" class="full-bio-link"><b>Read Full Bio</b></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer" style="font-family: 'Times New Roman', serif; height: 80px;"> <!-- Adjust the height as needed -->
+    <p style="text-align: center;">
+      This work is part of a larger project funded by the Advanced Technological Education Program of the National Science Foundation, PFI-TT 2213939. Any opinions, findings, conclusions or recommendations expressed in this site are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+    </p>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+
+  <!-- Initialize Swiper -->
+  
+
+
+  
+</body>
+</html>
